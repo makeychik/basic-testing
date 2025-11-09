@@ -13,7 +13,11 @@ jest.mock('path', () => ({
 import { existsSync } from 'fs';
 import { readFile } from 'fs/promises';
 import { join } from 'path';
-import { readFileAsynchronously, doStuffByTimeout, doStuffByInterval } from '.';
+import {
+  readFileAsynchronously,
+  doStuffByTimeout,
+  doStuffByInterval,
+} from './index';
 
 describe('doStuffByTimeout', () => {
   beforeAll(() => {
